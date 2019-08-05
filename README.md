@@ -3,6 +3,8 @@
 Shell script to test the performance of the most popular DNS resolvers from your location.
 
 Includes by default:
+ * RDS.DNS1 213.154.124.1
+ * RDS.DNS2 193.231.252.1
  * CloudFlare 1.1.1.1
  * Level3 4.2.2.1
  * Google 8.8.8.8
