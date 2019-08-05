@@ -25,7 +25,7 @@ PROVIDERS="
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com whatsapp.com"
+DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com wikipedia.org twitter.com gmail.com www.google.com whatsapp.com www.hotnews.ro www.reddit.com fast.com neowin.net arstechnica.com"
 
 
 totaldomains=0
