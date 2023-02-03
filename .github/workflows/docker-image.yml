@@ -15,10 +15,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag dnsperftester
       
     - uses: actions/checkout@v3
     - name: Run the Docker image
-      run: docker run my-image-name
+      run: docker run dnsperftester
 
   
