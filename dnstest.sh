@@ -26,17 +26,6 @@ PROVIDERS="
 # Domains to test. Duplicated domains are ok
 DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com wikipedia.org twitter.com gmail.com www.google.com whatsapp.com www.hotnews.ro www.reddit.com fast.com neowin.net arstechnica.com"
 
-
-#totaldomains=0
-printf "%-18s" ""
-for d in $DOMAINS2TEST; do
-    # totaldomains=$((totaldomains+1))
-    # printf "%-8s" "test$totaldomains"
-done
-printf "%-8s" "Average"
-echo ""
-
-
 for p in $NAMESERVERS $PROVIDERS; do
     pip=${p%%#*}
     pname=${p##*#}
@@ -55,8 +44,6 @@ for p in $NAMESERVERS $PROVIDERS; do
         printf "%-8s" "$ttime ms"
         ftime=$((ftime+ttime))
     done
-    #avg=`bc -lq <<< "scale=2; $ftime/$totaldomains"`
-
     echo "  $avg"
 done
 
