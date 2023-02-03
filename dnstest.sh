@@ -30,8 +30,8 @@ DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.
 #totaldomains=0
 printf "%-18s" ""
 for d in $DOMAINS2TEST; do
-    #totaldomains=$((totaldomains+1))
-    printf "%-8s" "test$totaldomains"
+    # totaldomains=$((totaldomains+1))
+    # printf "%-8s" "test$totaldomains"
 done
 printf "%-8s" "Average"
 echo ""
