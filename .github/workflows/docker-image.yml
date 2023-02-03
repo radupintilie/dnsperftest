@@ -17,7 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag dnsperftester
       
-    - uses: actions/checkout@v3
     - name: Run the Docker image
       run: docker run dnsperftester
 
